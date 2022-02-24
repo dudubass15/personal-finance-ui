@@ -1,0 +1,27 @@
+<main class="recovery">
+    <div class="container">
+        <nav class="previous">
+            <button class="btn-previous" [routerLink]="['/auth/login']">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+        </nav>
+        <div class="container-form">
+            <form [formGroup]="form">
+                <div class="row title">
+                    <h1>Esqueceu a sua senha?</h1>
+                    <span>Insira seu endereço de e-mail abaixo para realizar os procedimentos de recuperação da conta.</span>
+                </div>
+                <div class="row">
+                    <label for="email">E-mail</label>
+                    <input type="email" formControlName="email" class="form-control input-email" id="email" placeholder="Informe o seu e-mail aqui">
+                    <div *ngIf="form.get('email')?.touched && form.get('email')?.errors?.['required']">
+                        <small>*Campo obrigatório</small>
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn-recovery" (click)="sendEmailRecovery()">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
