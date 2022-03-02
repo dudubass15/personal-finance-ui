@@ -28,7 +28,7 @@
                 <a [routerLink]="['/auth/recovery']" class="link-recovery">Esqueci a minha senha?</a>
             </div>
             <div class="row">
-                <button type="button" class="btn-login" (click)="setDataLogin()">Entrar</button>
+                <app-buttons (click)="setDataLogin()" [background]="'btn-login'" [textButton]="'Login'" [width]="'w-100'"></app-buttons>
             </div>
         </form>
     </div>

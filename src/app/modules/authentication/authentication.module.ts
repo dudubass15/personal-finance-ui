@@ -6,11 +6,13 @@ import { RouterModule } from '@angular/router';
 import { AuthenticationRoutingModule } from './authentication-routing.module';
 import { LoginComponent } from './views/login/login.component';
 import { RecoveryComponent } from './views/recovery/recovery.component';
+import { ButtonsComponent } from '../../components/buttons/buttons.component';
 
 @NgModule({
     declarations: [
         LoginComponent,
-        RecoveryComponent
+        RecoveryComponent,
+        ButtonsComponent
     ],
     imports: [
         CommonModule,

@@ -8,6 +8,6 @@ export class AuthService {
     constructor() { }
 
     getStatusUserLogged(): boolean {
-        return false;
+        return true;
     }
 }
