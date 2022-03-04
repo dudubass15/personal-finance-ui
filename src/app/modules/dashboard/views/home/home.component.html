@@ -2,4 +2,18 @@
     <div class="row row-title">
         <h1 class="text-welcome">Bem vindo, Carlos Eduardo! <img class="mascote-svg" src="/assets/svg/mascote/mascote.svg" alt="Mascote"></h1>
     </div>
+    <div class="row grid-cards">
+        <div class="col">
+            <app-card-values [title]="'Conta'" [viewSubtitle]="false" [bgColor]="'bg-rose'"></app-card-values>
+        </div>
+        <div class="col">
+            <app-card-values [title]="'Despesas'" [subtitle]="'Mensal'" [bgColor]="'bg-red'"></app-card-values>
+        </div>
+        <div class="col">
+            <app-card-values [title]="'Cartões'" [subtitle]="'Mensal'" [bgColor]="'bg-orange'"></app-card-values>
+        </div>
+        <div class="col">
+            <app-card-values [title]="'Investimentos'" [subtitle]="'Mensal'" [bgColor]="'bg-blue'"></app-card-values>
+        </div>
+    </div>
 </main>
