@@ -36,7 +36,3 @@ registerLocaleData(ptBr)
     bootstrap: [AppComponent]
 })
 export class AppModule { }
-function localePt(localePt: any) {
-    throw new Error('Function not implemented.');
-}
-

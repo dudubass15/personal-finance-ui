@@ -1,20 +1,29 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'app-buttons',
     templateUrl: './buttons.component.html',
     styleUrls: ['./buttons.component.scss']
 })
-export class ButtonsComponent implements OnInit {
-    @Input() background: string = 'bg-blue';
-    @Input() textColor: string = 'text-white';
-    @Input() animation: boolean = false;
-    @Input() textButton: string = 'Botão';
-    @Input() width: string = 'w-100';
+export class ButtonsComponent {
+    @Input()
+    public background: string = 'bg-blue';
+    
+    @Input()
+    public textColor: string = 'text-white';
 
-    constructor() { }
+    @Input()
+    public animation: boolean = false;
+    
+    @Input()
+    public textButton: string = 'Botão';
+    
+    @Input()
+    public width: string = 'w-100';
+    
+    @Input()
+    public setIcon: boolean = false;
 
-    ngOnInit(): void {
-    }
-
+    @Input()
+    public iconClass: string = '';
 }

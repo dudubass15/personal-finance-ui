@@ -1,1 +1,4 @@
-<button type="button" ngClass="{{background}} {{textColor}} {{width}}">{{textButton}}</button>
+<button type="button" ngClass="{{background}} {{textColor}} {{width}}">
+    <span *ngIf="setIcon"><i class="fa {{iconClass}}" aria-hidden="true"></i></span>
+    {{textButton}}
+</button>

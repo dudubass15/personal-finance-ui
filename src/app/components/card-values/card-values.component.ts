@@ -21,7 +21,11 @@ export class CardValuesComponent implements OnInit {
     @Input() viewBody: boolean = true;
     @Input() viewFooter: boolean = true;
 
-    viewDetailsMoney: boolean = false;
+    /**
+     * Prop responsável por manipular exibição ou não dos valores nos cards.
+     * Default TRUE
+     */
+    viewDetailsMoney: boolean = true;
 
     constructor() { }
 
@@ -30,10 +34,10 @@ export class CardValuesComponent implements OnInit {
 
     viewDetailsMoneyEvent(): void {
         if (!!this.viewDetailsMoney) {
-            this.iconClass = 'fa-eye-slash';
+            this.iconClass = 'fa-eye';
             this.viewDetailsMoney = !this.viewDetailsMoney;
         } else {
-            this.iconClass = 'fa-eye';
+            this.iconClass = 'fa-eye-slash';
             this.viewDetailsMoney = !this.viewDetailsMoney;
         }
     }

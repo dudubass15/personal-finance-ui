@@ -1,7 +1,10 @@
 <main class="login">
     <div class="col-background">
         <div class="row">
-            <h1><span><i class="fa-solid fa-coins"></i></span> Finatech</h1>
+            <h1>
+                <span><i class="fa-solid fa-coins"></i></span> 
+                Finatech
+            </h1>
             <span>Suas financias gerenciadas por quem entende do assunto ...</span>
         </div>
     </div>
@@ -28,7 +31,14 @@
                 <a [routerLink]="['/auth/recovery']" class="link-recovery">Esqueci a minha senha?</a>
             </div>
             <div class="row">
-                <app-buttons (click)="setDataLogin()" [background]="'btn-login'" [textButton]="'Login'" [width]="'w-100'"></app-buttons>
+                <app-buttons 
+                    (click)="setDataLogin()"
+                    [background]="'btn-login'" 
+                    [textButton]="'Login'" 
+                    [width]="'w-100'"
+                    [setIcon]="true"
+                    [iconClass]="'fa-sign-in'"
+                ></app-buttons>
             </div>
         </form>
     </div>
